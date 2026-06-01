@@ -2,663 +2,607 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Zane Anwyll's Hair Salon in Guiguinto, Bulacan offers premium haircuts, coloring, keratin treatment, and nail services. Best in Restoring Damaged Hair using Organic Hair Treatments! Book your appointment today!">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zane Anwyll's Hair Salon – Guiguinto, Bulacan</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-  :root{
-    --rose:#f5c6d0;--rose-mid:#e8a0b0;--rose-deep:#c46880;
-    --blush:#fdf0f3;--cream:#faf8f5;--warm:#f7f2ee;
-    --text:#2a1f22;--text-mid:#6b4f56;--text-soft:#a07080;
-    --glass:rgba(255,255,255,0.18);--glass-border:rgba(255,255,255,0.35);
-    --r:20px;--r-sm:12px;--r-lg:32px;
-  }
-  html{scroll-behavior:smooth}
-  body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);overflow-x:hidden}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --rose:#f5c6d0;--rose-mid:#e8a0b0;--rose-deep:#c46880;
+    --blush:#fdf0f3;--cream:#faf8f5;--warm:#f7f2ee;
+    --text:#2a1f22;--text-mid:#6b4f56;--text-soft:#a07080;
+    --glass:rgba(255,255,255,0.18);--glass-border:rgba(255,255,255,0.35);
+    --r:20px;--r-sm:12px;--r-lg:32px;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);overflow-x:hidden}
 
-  /* ── HERO ─────────────────────────────────────────────────── */
-  .hero{
-    min-height:100vh;position:relative;display:flex;flex-direction:column;
-    background:linear-gradient(145deg,#f9e8ed 0%,#f5d5df 30%,#eddde8 60%,#e8daf0 100%);
-    overflow:hidden;
-  }
-  .hero-blob{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
-  .blob1{width:600px;height:600px;background:rgba(229,162,185,0.35);top:-120px;right:-80px}
-  .blob2{width:400px;height:400px;background:rgba(200,170,220,0.25);bottom:-60px;left:-60px}
-  .blob3{width:300px;height:300px;background:rgba(245,200,200,0.3);top:40%;left:30%}
+  /* ── HERO ─────────────────────────────────────────────────── */
+  .hero{
+    min-height:100vh;position:relative;display:flex;flex-direction:column;
+    background:linear-gradient(145deg,#f9e8ed 0%,#f5d5df 30%,#eddde8 60%,#e8daf0 100%);
+    overflow:hidden;
+  }
+  .hero-blob{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+  .blob1{width:600px;height:600px;background:rgba(229,162,185,0.35);top:-120px;right:-80px}
+  .blob2{width:400px;height:400px;background:rgba(200,170,220,0.25);bottom:-60px;left:-60px}
+  .blob3{width:300px;height:300px;background:rgba(245,200,200,0.3);top:40%;left:30%}
 
-  nav{
-    position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;
-    padding:24px 48px;
-  }
-  .logo-img {
-    height: 55px;
-    width: auto;
-    display: block;
-    object-fit: contain;
-  }
-  .nav-links{display:flex;gap:32px;list-style:none}
-  .nav-links a{font-size:14px;font-weight:400;color:var(--text-mid);text-decoration:none;transition:color .2s}
-  .nav-links a:hover{color:var(--text)}
-  .nav-cta{
-    background:var(--text);
-    padding:12px 24px;border-radius:40px;font-size:14px;font-weight:500;
-    color:#fff;text-decoration:none;transition:background .2s, transform .2s;
-  }
-  .nav-cta:hover{background:#3d2830;transform:translateY(-1px)}
+  nav{
+    position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;
+    padding:24px 48px;
+  }
+  .logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:.5px;color:var(--text)}
+  .logo span{color:var(--rose-deep)}
+  .nav-links{display:flex;gap:32px;list-style:none}
+  .nav-links a{font-size:14px;font-weight:400;color:var(--text-mid);text-decoration:none;transition:color .2s}
+  .nav-links a:hover{color:var(--text)}
+  .nav-cta{
+    background:var(--glass);border:1px solid var(--glass-border);
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    padding:10px 24px;border-radius:40px;font-size:14px;font-weight:500;
+    color:var(--text);text-decoration:none;transition:background .2s;
+  }
+  .nav-cta:hover{background:rgba(255,255,255,0.3)}
 
-  .hero-content{
-    flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;padding:48px 24px;position:relative;z-index:5;
-  }
-  .hero-tag{
-    display:inline-block;background:var(--glass);border:1px solid var(--glass-border);
-    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-    padding:8px 20px;border-radius:40px;font-size:13px;color:var(--text-mid);
-    margin-bottom:32px;letter-spacing:.5px;
-  }
-  .hero-tag::before{content:'✦ ';color:var(--rose-deep)}
-  h1{
-    font-family:'Cormorant Garamond',serif;font-size:clamp(52px,9vw,96px);
-    font-weight:300;line-height:1.05;color:var(--text);margin-bottom:8px;
-    letter-spacing:-1px;
-  }
-  h1 em{font-style:italic;color:var(--rose-deep)}
-  .hero-sub{
-    font-size:clamp(14px,2vw,17px);color:var(--text-mid);font-weight:300;
-    max-width:480px;margin:16px auto 40px;line-height:1.7;
-  }
-  .hero-btns{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
-  .btn-primary{
-    background:var(--text);color:#fff;padding:14px 32px;border-radius:40px;
-    font-size:15px;font-weight:500;text-decoration:none;transition:transform .2s,background .2s;
-  }
-  .btn-primary:hover{background:#3d2830;transform:translateY(-2px)}
-  .btn-ghost{
-    background:var(--glass);border:1px solid var(--glass-border);
-    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-    color:var(--text);padding:14px 32px;border-radius:40px;
-    font-size:15px;font-weight:500;text-decoration:none;transition:background .2s,transform .2s;
-  }
-  .btn-ghost:hover{background:rgba(255,255,255,0.3);transform:translateY(-2px)}
+  .hero-content{
+    flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:48px 24px;position:relative;z-index:5;
+  }
+  .hero-tag{
+    display:inline-block;background:var(--glass);border:1px solid var(--glass-border);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    padding:8px 20px;border-radius:40px;font-size:13px;color:var(--text-mid);
+    margin-bottom:32px;letter-spacing:.5px;
+  }
+  .hero-tag::before{content:'✦ ';color:var(--rose-deep)}
+  h1{
+    font-family:'Cormorant Garamond',serif;font-size:clamp(52px,9vw,96px);
+    font-weight:300;line-height:1.05;color:var(--text);margin-bottom:8px;
+    letter-spacing:-1px;
+  }
+  h1 em{font-style:italic;color:var(--rose-deep)}
+  .hero-sub{
+    font-size:clamp(14px,2vw,17px);color:var(--text-mid);font-weight:300;
+    max-width:480px;margin:16px auto 40px;line-height:1.7;
+  }
+  .hero-btns{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+  .btn-primary{
+    background:var(--text);color:#fff;padding:14px 32px;border-radius:40px;
+    font-size:15px;font-weight:500;text-decoration:none;transition:transform .2s,background .2s;
+  }
+  .btn-primary:hover{background:#3d2830;transform:translateY(-2px)}
+  .btn-ghost{
+    background:var(--glass);border:1px solid var(--glass-border);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    color:var(--text);padding:14px 32px;border-radius:40px;
+    font-size:15px;font-weight:500;text-decoration:none;transition:background .2s,transform .2s;
+  }
+  .btn-ghost:hover{background:rgba(255,255,255,0.3);transform:translateY(-2px)}
 
-  .hero-stats{
-    display:flex;gap:48px;justify-content:center;padding:32px 48px 40px;
-    position:relative;z-index:5;flex-wrap:wrap;
-  }
-  .stat{text-align:center}
-  .stat-num{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:500;color:var(--text)}
-  .stat-label{font-size:12px;color:var(--text-soft);letter-spacing:.5px;margin-top:2px}
+  .hero-stats{
+    display:flex;gap:48px;justify-content:center;padding:32px 48px 40px;
+    position:relative;z-index:5;flex-wrap:wrap;
+  }
+  .stat{text-align:center}
+  .stat-num{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:500;color:var(--text)}
+  .stat-label{font-size:12px;color:var(--text-soft);letter-spacing:.5px;margin-top:2px}
 
-  /* ── SCROLL MARQUEE ───────────────────────────────────────── */
-  .marquee-wrap{
-    background:var(--text);overflow:hidden;padding:14px 0;white-space:nowrap;
-  }
-  .marquee-track{display:inline-flex;animation:scroll 24s linear infinite}
-  .marquee-track span{
-    font-family:'Cormorant Garamond',serif;font-size:15px;font-style:italic;
-    color:var(--rose);padding:0 32px;letter-spacing:1px;
-  }
-  .marquee-track span.dot{color:var(--rose-mid);font-style:normal;padding:0 8px}
-  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  /* ── SCROLL MARQUEE ───────────────────────────────────────── */
+  .marquee-wrap{
+    background:var(--text);overflow:hidden;padding:14px 0;white-space:nowrap;
+  }
+  .marquee-track{display:inline-flex;animation:scroll 24s linear infinite}
+  .marquee-track span{
+    font-family:'Cormorant Garamond',serif;font-size:15px;font-style:italic;
+    color:var(--rose);padding:0 32px;letter-spacing:1px;
+  }
+  .marquee-track span.dot{color:var(--rose-mid);font-style:normal;padding:0 8px}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-  /* ── SECTION WRAPPER ──────────────────────────────────────── */
-  section{padding:96px 48px}
-  @media(max-width:768px){section{padding:64px 24px}nav{padding:20px 24px}.nav-links{display:none}}
-  .section-tag{
-    font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--rose-deep);
-    font-weight:500;margin-bottom:16px;
-  }
-  .section-title{
-    font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,56px);
-    font-weight:300;line-height:1.1;color:var(--text);
-  }
+  /* ── SECTION WRAPPER ──────────────────────────────────────── */
+  section{padding:96px 48px}
+  @media(max-width:768px){section{padding:64px 24px}nav{padding:20px 24px}.nav-links{display:none}}
+  .section-tag{
+    font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--rose-deep);
+    font-weight:500;margin-bottom:16px;
+  }
+  .section-title{
+    font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,56px);
+    font-weight:300;line-height:1.1;color:var(--text);
+  }
 
-  /* ── SERVICES ─────────────────────────────────────────────── */
-  #services{background:var(--cream)}
-  .services-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;flex-wrap:wrap;gap:24px}
-  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
-  .service-card{
-    background:var(--glass);border:1px solid var(--glass-border);
-    backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-    border-radius:var(--r);padding:40px 32px;position:relative;overflow:hidden;
-    transition:transform .25s,box-shadow .25s;
-    background-image:linear-gradient(135deg,rgba(255,255,255,0.22),rgba(255,255,255,0.05));
-  }
-  .service-card::before{
-    content:'';position:absolute;inset:0;border-radius:var(--r);
-    background:linear-gradient(135deg,rgba(245,198,208,0.15),transparent 60%);
-    pointer-events:none;
-  }
-  .service-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(196,104,128,0.12)}
-  .service-icon{
-    width:48px;height:48px;border-radius:14px;
-    background:linear-gradient(135deg,var(--rose),var(--rose-mid));
-    display:flex;align-items:center;justify-content:center;
-    font-size:22px;margin-bottom:24px;
-  }
-  .service-name{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;margin-bottom:8px}
-  .service-desc{font-size:14px;color:var(--text-mid);line-height:1.6;margin-bottom:24px}
-  .service-items{list-style:none;border-top:1px solid rgba(196,104,128,0.15);padding-top:20px}
-  .service-items li{
-    display:flex;justify-content:space-between;align-items:center;
-    padding:8px 0;font-size:14px;color:var(--text-mid);border-bottom:1px solid rgba(196,104,128,0.08);
-  }
-  .service-items li:last-child{border-bottom:none}
-  .service-items .name{font-weight:400}
-  .price{
-    font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:500;
-    color:var(--rose-deep);white-space:nowrap;
-  }
+  /* ── SERVICES ─────────────────────────────────────────────── */
+  #services{background:var(--cream)}
+  .services-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;flex-wrap:wrap;gap:24px}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+  .service-card{
+    background:var(--glass);border:1px solid var(--glass-border);
+    backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+    border-radius:var(--r);padding:40px 32px;position:relative;overflow:hidden;
+    transition:transform .25s,box-shadow .25s;
+    background-image:linear-gradient(135deg,rgba(255,255,255,0.22),rgba(255,255,255,0.05));
+  }
+  .service-card::before{
+    content:'';position:absolute;inset:0;border-radius:var(--r);
+    background:linear-gradient(135deg,rgba(245,198,208,0.15),transparent 60%);
+    pointer-events:none;
+  }
+  .service-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(196,104,128,0.12)}
+  .service-icon{
+    width:48px;height:48px;border-radius:14px;
+    background:linear-gradient(135deg,var(--rose),var(--rose-mid));
+    display:flex;align-items:center;justify-content:center;
+    font-size:22px;margin-bottom:24px;
+  }
+  .service-name{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;margin-bottom:8px}
+  .service-desc{font-size:14px;color:var(--text-mid);line-height:1.6;margin-bottom:24px}
+  .service-items{list-style:none;border-top:1px solid rgba(196,104,128,0.15);padding-top:20px}
+  .service-items li{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:8px 0;font-size:14px;color:var(--text-mid);border-bottom:1px solid rgba(196,104,128,0.08);
+  }
+  .service-items li:last-child{border-bottom:none}
+  .service-items .name{font-weight:400}
+  .price{
+    font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:500;
+    color:var(--rose-deep);white-space:nowrap;
+  }
 
-  /* ── TRANSFORMATIONS (BEFORE & AFTER Gallery) ────────────── */
-  #gallery{background:var(--warm)}
-  .gallery-header{text-align:center;margin-bottom:56px}
-  .gallery-grid{
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-    gap:32px;max-width:1100px;margin:0 auto;
-  }
-  @media(max-width:480px){.gallery-grid{grid-template-columns:1fr}}
-  .gallery-card{
-    background:var(--glass);border:1px solid var(--glass-border);
-    backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-    border-radius:var(--r-lg);padding:20px;overflow:hidden;
-    background-image:linear-gradient(135deg,rgba(255,255,255,0.25),rgba(255,255,255,0.05));
-    box-shadow:0 10px 30px rgba(42,31,34,0.05);
-    transition:transform .3s ease,box-shadow .3s ease;
-  }
-  .gallery-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 20px 45px rgba(196,104,128,0.15);
-  }
-  .gallery-img-container{
-    width:100%;
-    aspect-ratio:1.5;
-    border-radius:var(--r);
-    overflow:hidden;
-    position:relative;
-    background:#e0d8da;
-  }
-  .gallery-img-container img{
-    width:100%;height:100%;object-fit:cover;display:block;
-  }
-  .gallery-label{font-size:14px;font-weight:500;color:var(--text-mid);margin-top:16px;text-align:center}
+  /* ── WHY US ───────────────────────────────────────────────── */
+  #about{background:linear-gradient(160deg,#f9e8ed,#f0dce8 50%,#e8daf0)}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  @media(max-width:768px){.about-grid{grid-template-columns:1fr}}
+  .about-visual{position:relative}
+  .about-card-main{
+    background:var(--glass);border:1px solid var(--glass-border);
+    backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+    border-radius:var(--r-lg);padding:40px;aspect-ratio:4/5;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    background-image:linear-gradient(to bottom,rgba(245,198,208,0.1),rgba(196,104,128,0.2));
+    overflow:hidden;position:relative;
+  }
+  .about-card-main::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(ellipse at 30% 20%,rgba(255,255,255,0.3),transparent 60%);
+  }
+  .about-pill{
+    position:absolute;top:24px;right:-20px;
+    background:var(--text);color:#fff;border-radius:40px;
+    padding:12px 20px;font-size:13px;font-weight:500;
+    box-shadow:0 8px 24px rgba(42,31,34,0.2);
+  }
+  .about-pill strong{display:block;font-family:'Cormorant Garamond',serif;font-size:22px}
+  .about-deco{
+    font-family:'Cormorant Garamond',serif;font-size:clamp(80px,15vw,160px);
+    font-weight:300;color:rgba(196,104,128,0.12);line-height:1;position:absolute;
+    top:20px;left:20px;pointer-events:none;
+  }
+  .features{margin-top:40px;display:flex;flex-direction:column;gap:24px}
+  .feature{display:flex;gap:16px;align-items:flex-start}
+  .feature-dot{
+    width:36px;height:36px;border-radius:10px;flex-shrink:0;
+    background:linear-gradient(135deg,var(--rose),var(--rose-mid));
+    display:flex;align-items:center;justify-content:center;font-size:16px;margin-top:2px;
+  }
+  .feature-title{font-weight:500;margin-bottom:4px;font-size:15px}
+  .feature-desc{font-size:14px;color:var(--text-mid);line-height:1.6}
 
-  /* ── WHY US ───────────────────────────────────────────────── */
-  #about{background:linear-gradient(160deg,#f9e8ed,#f0dce8 50%,#e8daf0)}
-  .about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
-  @media(max-width:968px){.about-grid{grid-template-columns:1fr;gap:40px}}
-  .about-visual{position:relative}
-  .about-img-showcase{
-    width:100%;
-    aspect-ratio:16/9;
-    border-radius:var(--r-lg);
-    object-fit:cover;
-    border:1px solid var(--glass-border);
-    box-shadow:0 24px 64px rgba(42,31,34,0.15);
-  }
-  .about-pill{
-    position:absolute;bottom:-20px;right:24px;
-    background:var(--text);color:#fff;border-radius:40px;
-    padding:12px 24px;font-size:13px;font-weight:500;
-    box-shadow:0 8px 24px rgba(42,31,34,0.2);
-    text-align: center;
-  }
-  .about-pill strong{display:block;font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--rose)}
-  .features{margin-top:40px;display:flex;flex-direction:column;gap:24px}
-  .feature{display:flex;gap:16px;align-items:flex-start}
-  .feature-dot{
-    width:36px;height:36px;border-radius:10px;flex-shrink:0;
-    background:linear-gradient(135deg,var(--rose),var(--rose-mid));
-    display:flex;align-items:center;justify-content:center;font-size:16px;margin-top:2px;
-  }
-  .feature-title{font-weight:500;margin-bottom:4px;font-size:15px}
-  .feature-desc{font-size:14px;color:var(--text-mid);line-height:1.6}
+  /* ── REVIEWS ──────────────────────────────────────────────── */
+  #reviews{background:var(--cream)}
+  .reviews-header{text-align:center;margin-bottom:56px}
+  .stars{color:var(--rose-deep);font-size:20px;letter-spacing:2px;margin-bottom:8px}
+  .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .review-card{
+    background:var(--glass);border:1px solid var(--glass-border);
+    backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+    border-radius:var(--r);padding:32px;
+    background-image:linear-gradient(135deg,rgba(255,255,255,0.2),rgba(255,255,255,0.05));
+  }
+  .review-stars{color:var(--rose-deep);font-size:14px;margin-bottom:16px}
+  .review-text{font-size:15px;color:var(--text-mid);line-height:1.7;margin-bottom:20px;font-style:italic}
+  .review-author{display:flex;align-items:center;gap:12px}
+  .avatar{
+    width:36px;height:36px;border-radius:50%;
+    background:linear-gradient(135deg,var(--rose),var(--rose-mid));
+    display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;color:#fff;
+  }
+  .author-name{font-size:14px;font-weight:500}
+  .author-meta{font-size:12px;color:var(--text-soft)}
 
-  /* ── REVIEWS ──────────────────────────────────────────────── */
-  #reviews{background:var(--cream)}
-  .reviews-header{text-align:center;margin-bottom:56px}
-  .stars{color:var(--rose-deep);font-size:20px;letter-spacing:2px;margin-bottom:8px}
-  .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-  .review-card{
-    background:var(--glass);border:1px solid var(--glass-border);
-    backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-    border-radius:var(--r);padding:32px;
-    background-image:linear-gradient(135deg,rgba(255,255,255,0.2),rgba(255,255,255,0.05));
-  }
-  .review-stars{color:var(--rose-deep);font-size:14px;margin-bottom:16px}
-  .review-text{font-size:15px;color:var(--text-mid);line-height:1.7;margin-bottom:20px;font-style:italic}
-  .review-author{display:flex;align-items:center;gap:12px}
-  .avatar{
-    width:36px;height:36px;border-radius:50%;
-    background:linear-gradient(135deg,var(--rose),var(--rose-mid));
-    display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;color:#fff;
-  }
-  .author-name{font-size:14px;font-weight:500}
-  .author-meta{font-size:12px;color:var(--text-soft)}
+  /* ── LOCATION ─────────────────────────────────────────────── */
+  #location{background:linear-gradient(160deg,#f0dce8,#e8daf0)}
+  .location-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  @media(max-width:768px){.location-grid{grid-template-columns:1fr}}
+  .location-details{display:flex;flex-direction:column;gap:24px;margin-top:32px}
+  .detail-item{display:flex;gap:16px;align-items:flex-start}
+  .detail-icon{
+    width:44px;height:44px;border-radius:12px;flex-shrink:0;
+    background:linear-gradient(135deg,var(--rose),var(--rose-mid));
+    display:flex;align-items:center;justify-content:center;font-size:18px;
+  }
+  .detail-label{font-size:12px;color:var(--text-soft);letter-spacing:.5px;margin-bottom:4px}
+  .detail-value{font-size:15px;font-weight:500;color:var(--text)}
+  .detail-sub{font-size:13px;color:var(--text-mid)}
+  .map-embed{
+    border-radius:var(--r-lg);overflow:hidden;
+    border:1px solid var(--glass-border);box-shadow:0 12px 40px rgba(196,104,128,0.12);
+  }
+  .map-embed iframe{display:block;width:100%;height:360px;border:none}
 
-  /* ── LOCATION ─────────────────────────────────────────────── */
-  #location{background:linear-gradient(160deg,#f0dce8,#e8daf0)}
-  .location-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-  @media(max-width:768px){.location-grid{grid-template-columns:1fr}}
-  .location-details{display:flex;flex-direction:column;gap:24px;margin-top:32px}
-  .detail-item{display:flex;gap:16px;align-items:flex-start}
-  .detail-icon{
-    width:44px;height:44px;border-radius:12px;flex-shrink:0;
-    background:linear-gradient(135deg,var(--rose),var(--rose-mid));
-    display:flex;align-items:center;justify-content:center;font-size:18px;
-  }
-  .detail-label{font-size:12px;color:var(--text-soft);letter-spacing:.5px;margin-bottom:4px}
-  .detail-value{font-size:15px;font-weight:500;color:var(--text)}
-  .detail-sub{font-size:13px;color:var(--text-mid)}
-  .map-embed{
-    border-radius:var(--r-lg);overflow:hidden;
-    border:1px solid var(--glass-border);box-shadow:0 12px 40px rgba(196,104,128,0.12);
-  }
-  .map-embed iframe{display:block;width:100%;height:360px;border:none}
+  /* ── FOOTER ───────────────────────────────────────────────── */
+  footer{
+    background:var(--text);color:rgba(255,255,255,0.7);
+    padding:64px 48px 32px;
+  }
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:48px}
+  @media(max-width:768px){.footer-grid{grid-template-columns:1fr}}
+  .footer-brand{font-family:'Cormorant Garamond',serif;font-size:20px;color:#fff;margin-bottom:12px}
+  .footer-brand span{color:var(--rose)}
+  .footer-desc{font-size:14px;line-height:1.7}
+  .footer-heading{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:16px}
+  .footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+  .footer-links a{font-size:14px;color:rgba(255,255,255,0.6);text-decoration:none;transition:color .2s}
+  .footer-links a:hover{color:#fff}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+    font-size:12px;
+  }
 
-  /* ── FOOTER ───────────────────────────────────────────────── */
-  footer{
-    background:var(--text);color:rgba(255,255,255,0.7);
-    padding:64px 48px 32px;
-  }
-  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:48px}
-  @media(max-width:768px){.footer-grid{grid-template-columns:1fr}}
-  .footer-logo{height:45px;width:auto;margin-bottom:16px;object-fit:contain}
-  .footer-desc{font-size:14px;line-height:1.7}
-  .footer-heading{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:16px}
-  .footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
-  .footer-links a{font-size:14px;color:rgba(255,255,255,0.6);text-decoration:none;transition:color .2s}
-  .footer-links a:hover{color:#fff}
-  .footer-bottom{
-    border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;
-    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
-    font-size:12px;
-  }
-
-  /* ── MESSENGER BUTTON ─────────────────────────────────────── */
-  .messenger-fab{
-    position:fixed;bottom:32px;right:32px;z-index:999;
-    width:60px;height:60px;border-radius:50%;
-    background:linear-gradient(135deg,#0099ff,#a334fa);
-    display:flex;align-items:center;justify-content:center;
-    box-shadow:0 8px 32px rgba(0,153,255,0.35);
-    text-decoration:none;transition:transform .25s,box-shadow .25s;
-  }
-  .messenger-fab:hover{transform:scale(1.1);box-shadow:0 12px 40px rgba(0,153,255,0.45)}
-  .messenger-fab svg{width:28px;height:28px;fill:#fff}
-  .messenger-tooltip{
-    position:fixed;bottom:42px;right:102px;z-index:998;
-    background:var(--text);color:#fff;padding:8px 16px;border-radius:40px;
-    font-size:13px;font-weight:500;white-space:nowrap;pointer-events:none;
-    opacity:0;transform:translateX(8px);transition:opacity .2s,transform .2s;
-  }
-  .messenger-fab:hover ~ .messenger-tooltip{opacity:1;transform:translateX(0)}
+  /* ── MESSENGER BUTTON ─────────────────────────────────────── */
+  .messenger-fab{
+    position:fixed;bottom:32px;right:32px;z-index:999;
+    width:60px;height:60px;border-radius:50%;
+    background:linear-gradient(135deg,#0099ff,#a334fa);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 32px rgba(0,153,255,0.35);
+    text-decoration:none;transition:transform .25s,box-shadow .25s;
+  }
+  .messenger-fab:hover{transform:scale(1.1);box-shadow:0 12px 40px rgba(0,153,255,0.45)}
+  .messenger-fab svg{width:28px;height:28px;fill:#fff}
+  .messenger-tooltip{
+    position:fixed;bottom:42px;right:102px;z-index:998;
+    background:var(--text);color:#fff;padding:8px 16px;border-radius:40px;
+    font-size:13px;font-weight:500;white-space:nowrap;pointer-events:none;
+    opacity:0;transform:translateX(8px);transition:opacity .2s,transform .2s;
+  }
+  .messenger-fab:hover ~ .messenger-tooltip{opacity:1;transform:translateX(0)}
 </style>
 </head>
 <body>
 
-<!-- ── HERO ─────────────────────────────────────── -->
 <section class="hero">
-  <div class="hero-blob blob1"></div>
-  <div class="hero-blob blob2"></div>
-  <div class="hero-blob blob3"></div>
+  <div class="hero-blob blob1"></div>
+  <div class="hero-blob blob2"></div>
+  <div class="hero-blob blob3"></div>
 
-  <nav>
-    <img src="522667673_122246977838074007_3155201805058839485_n.jpg" alt="Zane Anwyll's Hair Salon Logo" class="logo-img">
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Transformations</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#location">Location</a></li>
-    </ul>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="nav-cta">Book Appointment</a>
-  </nav>
+  <nav>
+    <div class="logo">Zane Anwyll<span>'s</span></div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="nav-cta">Book Appointment</a>
+  </nav>
 
-  <div class="hero-content">
-    <div class="hero-tag">Guiguinto, Bulacan · Sunoria Plaza</div>
-    <h1>Your hair,<br><em>beautifully</em><br>reimagined.</h1>
-    <p class="hero-sub">A clean, calm space where every visit leaves you feeling refreshed, confident, and completely yourself.</p>
-    <div class="hero-btns">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn-primary">Book an Appointment</a>
-      <a href="#services" class="btn-ghost">Explore Services</a>
-    </div>
-  </div>
+  <div class="hero-content">
+    <div class="hero-tag">Guiguinto, Bulacan · Sunoria Plaza</div>
+    <h1>Your hair,<br><em>beautifully</em><br>reimagined.</h1>
+    <p class="hero-sub">A clean, calm space where every visit leaves you feeling refreshed, confident, and completely yourself.</p>
+    <div class="hero-btns">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn-primary">Book an Appointment</a>
+      <a href="#services" class="btn-ghost">Explore Services</a>
+    </div>
+  </div>
 
-  <div class="hero-stats">
-    <div class="stat">
-      <div class="stat-num">4.7★</div>
-      <div class="stat-label">Google Rating</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">14+</div>
-      <div class="stat-label">Happy Reviews</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">8:30 AM</div>
-      <div class="stat-label">Opens Daily</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">4</div>
-      <div class="stat-label">Signature Services</div>
-    </div>
-  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">4.7★</div>
+      <div class="stat-label">Google Rating</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">14+</div>
+      <div class="stat-label">Happy Reviews</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">8:30 AM</div>
+      <div class="stat-label">Opens Daily</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Signature Services</div>
+    </div>
+  </div>
 </section>
 
-<!-- ── MARQUEE ───────────────────────────────────── -->
 <div class="marquee-wrap">
-  <div class="marquee-track">
-    <span>Haircuts</span><span class="dot">✦</span>
-    <span>Hair Coloring</span><span class="dot">✦</span>
-    <span>Keratin Treatment</span><span class="dot">✦</span>
-    <span>Nail Services</span><span class="dot">✦</span>
-    <span>Hair Rebonding</span><span class="dot">✦</span>
-    <span>Premium Care</span><span class="dot">✦</span>
-    <span>Haircuts</span><span class="dot">✦</span>
-    <span>Hair Coloring</span><span class="dot">✦</span>
-    <span>Keratin Treatment</span><span class="dot">✦</span>
-    <span>Nail Services</span><span class="dot">✦</span>
-    <span>Hair Rebonding</span><span class="dot">✦</span>
-    <span>Premium Care</span><span class="dot">✦</span>
-  </div>
+  <div class="marquee-track">
+    <span>Haircuts</span><span class="dot">✦</span>
+    <span>Hair Coloring</span><span class="dot">✦</span>
+    <span>Keratin Treatment</span><span class="dot">✦</span>
+    <span>Nail Services</span><span class="dot">✦</span>
+    <span>Hair Rebonding</span><span class="dot">✦</span>
+    <span>Premium Care</span><span class="dot">✦</span>
+    <span>Haircuts</span><span class="dot">✦</span>
+    <span>Hair Coloring</span><span class="dot">✦</span>
+    <span>Keratin Treatment</span><span class="dot">✦</span>
+    <span>Nail Services</span><span class="dot">✦</span>
+    <span>Hair Rebonding</span><span class="dot">✦</span>
+    <span>Premium Care</span><span class="dot">✦</span>
+  </div>
 </div>
 
-<!-- ── SERVICES ──────────────────────────────────── -->
 <section id="services">
-  <div class="services-header">
-    <div>
-      <div class="section-tag">What We Offer</div>
-      <h2 class="section-title">Our services,<br>crafted with care.</h2>
-    </div>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn-primary" style="align-self:flex-end">Book Now</a>
-  </div>
+  <div class="services-header">
+    <div>
+      <div class="section-tag">What We Offer</div>
+      <h2 class="section-title">Our services,<br>crafted with care.</h2>
+    </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn-primary" style="align-self:flex-end">Book Now</a>
+  </div>
 
-  <div class="services-grid">
+  <div class="services-grid">
 
-    <div class="service-card">
-      <div class="service-icon">✂️</div>
-      <div class="service-name">Haircuts</div>
-      <div class="service-desc">Expertly tailored cuts that suit your face shape, lifestyle, and personality.</div>
-      <ul class="service-items">
-        <li><span class="name">Ladies' Cut</span><span class="price">₱150 – ₱250</span></li>
-        <li><span class="name">Men's Cut</span><span class="price">₱100 – ₱180</span></li>
-        <li><span class="name">Kids' Cut</span><span class="price">₱80 – ₱150</span></li>
-        <li><span class="name">Blow Dry + Style</span><span class="price">₱120 – ₱200</span></li>
-      </ul>
-    </div>
+    <div class="service-card">
+      <div class="service-icon"> </div>
+      <div class="service-name">Haircuts</div>
+      <div class="service-desc">Expertly tailored cuts that suit your face shape, lifestyle, and personality.</div>
+      <ul class="service-items">
+        <li><span class="name">Ladies' Cut</span><span class="price">₱150 – ₱250</span></li>
+        <li><span class="name">Men's Cut</span><span class="price">₱100 – ₱180</span></li>
+        <li><span class="name">Kids' Cut</span><span class="price">₱80 – ₱150</span></li>
+        <li><span class="name">Blow Dry + Style</span><span class="price">₱120 – ₱200</span></li>
+      </ul>
+    </div>
 
-    <div class="service-card">
-      <div class="service-icon">🎨</div>
-      <div class="service-name">Hair Coloring</div>
-      <div class="service-desc">From natural tones to bold transformations — color that speaks your story.</div>
-      <ul class="service-items">
-        <li><span class="name">Root Touch-up</span><span class="price">₱350+</span></li>
-        <li><span class="name">Full Color</span><span class="price">₱600 – ₱1,200</span></li>
-        <li><span class="name">Highlights</span><span class="price">₱800 – ₱1,500</span></li>
-        <li><span class="name">Balayage</span><span class="price">₱1,200+</span></li>
-      </ul>
-    </div>
+    <div class="service-card">
+      <div class="service-icon"> </div>
+      <div class="service-name">Hair Coloring</div>
+      <div class="service-desc">From natural tones to bold transformations — color that speaks your story.</div>
+      <ul class="service-items">
+        <li><span class="name">Root Touch-up</span><span class="price">₱350+</span></li>
+        <li><span class="name">Full Color</span><span class="price">₱600 – ₱1,200</span></li>
+        <li><span class="name">Highlights</span><span class="price">₱800 – ₱1,500</span></li>
+        <li><span class="name">Balayage</span><span class="price">₱1,200+</span></li>
+      </ul>
+    </div>
 
-    <div class="service-card">
-      <div class="service-icon">💎</div>
-      <div class="service-name">Keratin Treatment</div>
-      <div class="service-desc">Achieve silky, frizz-free, manageable hair that lasts for months.</div>
-      <ul class="service-items">
-        <li><span class="name">Short Hair</span><span class="price">₱1,500+</span></li>
-        <li><span class="name">Medium Hair</span><span class="price">₱2,000+</span></li>
-        <li><span class="name">Long Hair</span><span class="price">₱2,500+</span></li>
-        <li><span class="name">Rebonding</span><span class="price">₱1,800+</span></li>
-      </ul>
-    </div>
+    <div class="service-card">
+      <div class="service-icon"> </div>
+      <div class="service-name">Keratin Treatment</div>
+      <div class="service-desc">Achieve silky, frizz-free, manageable hair that lasts for months.</div>
+      <ul class="service-items">
+        <li><span class="name">Short Hair</span><span class="price">₱1,500+</span></li>
+        <li><span class="name">Medium Hair</span><span class="price">₱2,000+</span></li>
+        <li><span class="name">Long Hair</span><span class="price">₱2,500+</span></li>
+        <li><span class="name">Rebonding</span><span class="price">₱1,800+</span></li>
+      </ul>
+    </div>
 
-    <div class="service-card">
-      <div class="service-icon">💅</div>
-      <div class="service-name">Nail Services</div>
-      <div class="service-desc">Clean, polished nails to complete your look from head to fingertip.</div>
-      <ul class="service-items">
-        <li><span class="name">Manicure</span><span class="price">₱100 – ₱180</span></li>
-        <li><span class="name">Pedicure</span><span class="price">₱120 – ₱200</span></li>
-        <li><span class="name">Gel Polish</span><span class="price">₱250 – ₱400</span></li>
-        <li><span class="name">Mani + Pedi Combo</span><span class="price">₱200 – ₱350</span></li>
-      </ul>
-    </div>
+    <div class="service-card">
+      <div class="service-icon"> </div>
+      <div class="service-name">Nail Services</div>
+      <div class="service-desc">Clean, polished nails to complete your look from head to fingertip.</div>
+      <ul class="service-items">
+        <li><span class="name">Manicure</span><span class="price">₱100 – ₱180</span></li>
+        <li><span class="name">Pedicure</span><span class="price">₱120 – ₱200</span></li>
+        <li><span class="name">Gel Polish</span><span class="price">₱250 – ₱400</span></li>
+        <li><span class="name">Mani + Pedi Combo</span><span class="price">₱200 – ₱350</span></li>
+      </ul>
+    </div>
 
-  </div>
-  <p style="text-align:center;font-size:13px;color:var(--text-soft);margin-top:24px">
-    Prices may vary depending on hair length and condition. Please inquire for exact pricing.
-  </p>
+  </div>
+  <p style="text-align:center;font-size:13px;color:var(--text-soft);margin-top:24px">
+    Prices may vary depending on hair length and condition. Please inquire for exact pricing.
+  </p>
 </section>
 
-<!-- ── TRANSFORMATIONS (BEFORE & AFTER) ───────────── -->
-<section id="gallery">
-  <div class="gallery-header">
-    <div class="section-tag">Real Results</div>
-    <h2 class="section-title">The Zane Anwyll Transformation</h2>
-    <p style="font-size:15px;color:var(--text-mid);max-width:520px;margin:12px auto 0;line-height:1.6">
-      See the power of our signature treatments. Dramatic frizz reduction, intense hydration, and high-gloss finishes.
-    </p>
-  </div>
-
-  <div class="gallery-grid">
-    <div class="gallery-card">
-      <div class="gallery-img-container">
-        <img src="images.jpeg" alt="Signature Keratin Treatment Before and After Results">
-      </div>
-      <div class="gallery-label">Signature Smooth & Straight Transformation</div>
-    </div>
-
-    <div class="gallery-card">
-      <div class="gallery-img-container">
-        <img src="keratin-treatment-service-pictures-1024x516.webp" alt="Frizz Control Keratin Treatment Before and After Results">
-      </div>
-      <div class="gallery-label">Premium Intense Frizz Control & Shine</div>
-    </div>
-  </div>
-</section>
-
-<!-- ── ABOUT / WHY US ─────────────────────────────── -->
 <section id="about">
-  <div class="about-grid">
-    <div class="about-visual">
-      <img src="565192054_122260551878074007_5487785637089705343_n.jpg" alt="Zane Anwyll's Hair Salon Interior" class="about-img-showcase">
-      <div class="about-pill">
-        <strong>4.7 ★</strong>
-        Google Verified Space
-      </div>
-    </div>
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="about-deco">Za</div>
+      <div class="about-card-main">
+        <div style="position:relative;z-index:1">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--text);font-weight:300;margin-bottom:8px">
+            "I felt happier after my haircut."
+          </div>
+          <div style="font-size:13px;color:var(--text-mid)">— Jamie, Google Review</div>
+        </div>
+      </div>
+      <div class="about-pill">
+        <strong>4.7 ★</strong>
+        14 Reviews
+      </div>
+    </div>
 
-    <div>
-      <div class="section-tag">Why Choose Us</div>
-      <h2 class="section-title">A salon that<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--rose-deep)">truly</em> cares.</h2>
-      <p style="font-size:15px;color:var(--text-mid);line-height:1.8;margin:16px 0 0">
-        At Zane Anwyll's, we believe a great salon experience goes beyond the chair.
-        It's about feeling heard, cared for, and leaving better than you came in.
-      </p>
-      <div class="features">
-        <div class="feature">
-          <div class="feature-dot">🌸</div>
-          <div>
-            <div class="feature-title">Warm, Hands-On Team</div>
-            <div class="feature-desc">Our staff are attentive, friendly, and genuinely invested in your experience — ask for Francine!</div>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature-dot">✨</div>
-          <div>
-            <div class="feature-title">Clean & Comfortable Space</div>
-            <div class="feature-desc">A calm, quiet environment so you can fully relax and enjoy your me-time.</div>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature-dot">💝</div>
-          <div>
-            <div class="feature-title">Top-Tier Service, Every Visit</div>
-            <div class="feature-desc">High-quality results that our clients keep coming back for. Super sulit!</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div>
+      <div class="section-tag">Why Choose Us</div>
+      <h2 class="section-title">A salon that<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--rose-deep)">truly</em> cares.</h2>
+      <p style="font-size:15px;color:var(--text-mid);line-height:1.8;margin:16px 0 0">
+        At Zane Anwyll's, we believe a great salon experience goes beyond the chair.
+        It's about feeling heard, cared for, and leaving better than you came in.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-dot"> </div>
+          <div>
+            <div class="feature-title">Warm, Hands-On Team</div>
+            <div class="feature-desc">Our staff are attentive, friendly, and genuinely invested in your experience — ask for Francine!</div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-dot"> </div>
+          <div>
+            <div class="feature-title">Clean & Comfortable Space</div>
+            <div class="feature-desc">A calm, quiet environment so you can fully relax and enjoy your me-time.</div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-dot"> </div>
+          <div>
+            <div class="feature-title">Top-Tier Service, Every Visit</div>
+            <div class="feature-desc">High-quality results that our clients keep coming back for. Super sulit!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ── REVIEWS ────────────────────────────────────── -->
 <section id="reviews">
-  <div class="reviews-header">
-    <div class="section-tag">Client Love</div>
-    <div class="stars">★★★★★</div>
-    <h2 class="section-title">What our clients say</h2>
-  </div>
+  <div class="reviews-header">
+    <div class="section-tag">Client Love</div>
+    <div class="stars">★★★★★</div>
+    <h2 class="section-title">What our clients say</h2>
+  </div>
 
-  <div class="reviews-grid">
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"I was having bad hairfall due to stress. I decided to get a haircut and found them on Google since it was near. Great decision to come here. I felt happier after my haircut. Thanks to Francine for fixing my hair and taking care of my needs. The place is also clean and quiet."</p>
-      <div class="review-author">
-        <div class="avatar">JC</div>
-        <div>
-          <div class="author-name">Jamie Carmelle A. M.</div>
-          <div class="author-meta">4 months ago · Google Review</div>
-        </div>
-      </div>
-    </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I was having bad hairfall due to stress. I decided to get a haircut and found them on Google since it was near. Great decision to come here. I felt happier after my haircut. Thanks to Francine for fixing my hair and taking care of my needs. The place is also clean and quiet."</p>
+      <div class="review-author">
+        <div class="avatar">JC</div>
+        <div>
+          <div class="author-name">Jamie Carmelle A. M.</div>
+          <div class="author-meta">4 months ago · Google Review</div>
+        </div>
+      </div>
+    </div>
 
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"Super worth it! Accommodating staff and top tier service! Will definitely come back next time!"</p>
-      <div class="review-author">
-        <div class="avatar">KK</div>
-        <div>
-          <div class="author-name">Kyla Keeps</div>
-          <div class="author-meta">4 months ago · Google Review</div>
-        </div>
-      </div>
-    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Super worth it! Accommodating staff and top tier service! Will definitely come back next time!"</p>
+      <div class="review-author">
+        <div class="avatar">KK</div>
+        <div>
+          <div class="author-name">Kyla Keeps</div>
+          <div class="author-meta">4 months ago · Google Review</div>
+        </div>
+      </div>
+    </div>
 
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"High quality performance and top tier service. Friendly staffs and sobrang hands on ng mga owners. ✨"</p>
-      <div class="review-author">
-        <div class="avatar">JM</div>
-        <div>
-          <div class="author-name">Jeane Monique Serafica</div>
-          <div class="author-meta">4 months ago · Google Review</div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"High quality performance and top tier service. Friendly staffs and sobrang hands on ng mga owners. "</p>
+      <div class="review-author">
+        <div class="avatar">JM</div>
+        <div>
+          <div class="author-name">Jeane Monique Serafica</div>
+          <div class="author-meta">4 months ago · Google Review</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div style="text-align:center;margin-top:40px">
-    <a href="https://www.google.com/search?q=https://maps.google.com/%3Fq%3DSunoria%2BPlaza%2BGuiguinto%2BBulacan" target="_blank" rel="noopener" class="btn-ghost" style="display:inline-block;border:1px solid rgba(196,104,128,0.3)">
-      Leave a Google Review
-    </a>
-  </div>
+  <div style="text-align:center;margin-top:40px">
+    <a href="https://www.google.com/search?q=https://maps.google.com/%3Fq%3DSunoria%2BPlaza%2BGuiguinto%2BBulacan" target="_blank" rel="noopener" class="btn-ghost" style="display:inline-block;border:1px solid rgba(196,104,128,0.3)">
+      Leave a Google Review
+    </a>
+  </div>
 </section>
 
-<!-- ── LOCATION ───────────────────────────────────── -->
 <section id="location">
-  <div class="location-grid">
-    <div>
-      <div class="section-tag">Find Us</div>
-      <h2 class="section-title">We're right in<br>your neighborhood.</h2>
-      <div class="location-details">
-        <div class="detail-item">
-          <div class="detail-icon">📍</div>
-          <div>
-            <div class="detail-label">ADDRESS</div>
-            <div class="detail-value">4620 MacArthur Hwy, Poblacion</div>
-            <div class="detail-sub">Guiguinto, Bulacan 3015 · Inside Sunoria Plaza</div>
-          </div>
-        </div>
-        <div class="detail-item">
-          <div class="detail-icon">🕗</div>
-          <div>
-            <div class="detail-label">HOURS</div>
-            <div class="detail-value">8:30 AM – Closing</div>
-            <div class="detail-sub">Open Tuesday to Sunday · Closed Monday</div>
-          </div>
-        </div>
-        <div class="detail-item">
-          <div class="detail-icon">📱</div>
-          <div>
-            <div class="detail-label">CONTACT</div>
-            <div class="detail-value"><a href="tel:09218090169" style="color:inherit;text-decoration:none">0921 809 0169</a></div>
-            <div class="detail-sub">Call or text for inquiries</div>
-          </div>
-        </div>
-        <div class="detail-item">
-          <div class="detail-icon">🗺️</div>
-          <div>
-            <div class="detail-label">PLUS CODE</div>
-            <div class="detail-value">RVHJ+9H Guiguinto, Bulacan</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="map-embed">
-        <iframe
-          src="https://www.google.com/search?q=https://www.google.com/maps/embed%3Fpb%3D!1m18!1m12!1m3!1d3856.323861214059!2d120.8776694!3d14.8345789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33965241e5631481%253A0xcb55cf4bda90bebf!2sMacArthur%2520Hwy%252C%2520Guiguinto%252C%2520Bulacan!5e0!3m2!1sen!2sph!4v1717312000000!5m2!1sen!2sph"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Zane Anwyll's Hair Salon location map">
-        </iframe>
-      </div>
-      <a
-        href="http://googleusercontent.com/maps.google.com/9"
-        target="_blank" rel="noopener"
-        style="display:block;text-align:center;margin-top:16px"
-        class="btn-primary">
-        Get Directions
-      </a>
-    </div>
-  </div>
+  <div class="location-grid">
+    <div>
+      <div class="section-tag">Find Us</div>
+      <h2 class="section-title">We're right in<br>your neighborhood.</h2>
+      <div class="location-details">
+        <div class="detail-item">
+          <div class="detail-icon"> </div>
+          <div>
+            <div class="detail-label">ADDRESS</div>
+            <div class="detail-value">4620 MacArthur Hwy, Poblacion</div>
+            <div class="detail-sub">Guiguinto, Bulacan 3015 · Inside Sunoria Plaza</div>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon"> </div>
+          <div>
+            <div class="detail-label">HOURS</div>
+            <div class="detail-value">8:30 AM – Closing</div>
+            <div class="detail-sub">Open Tuesday to Sunday · Closed Monday</div>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon"> </div>
+          <div>
+            <div class="detail-label">CONTACT</div>
+            <div class="detail-value"><a href="tel:09218090169" style="color:inherit;text-decoration:none">0921 809 0169</a></div>
+            <div class="detail-sub">Call or text for inquiries</div>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon"> </div>
+          <div>
+            <div class="detail-label">PLUS CODE</div>
+            <div class="detail-value">RVHJ+9H Guiguinto, Bulacan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/search?q=https://www.google.com/maps/embed%3Fpb%3D!1m18!1m12!1m3!1d3856.323861214059!2d120.8776694!3d14.8345789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33965241e5631481%253A0xcb55cf4bda90bebf!2sMacArthur%2520Hwy%252C%2520Guiguinto%252C%2520Bulacan!5e0!3m2!1sen!2sph!4v1717312000000!5m2!1sen!2sph"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Zane Anwyll's Hair Salon location map">
+        </iframe>
+      </div>
+      <a
+        href="http://googleusercontent.com/maps.google.com/9"
+        target="_blank" rel="noopener"
+        style="display:block;text-align:center;margin-top:16px"
+        class="btn-primary">
+        Get Directions
+      </a>
+    </div>
+  </div>
 </section>
 
-<!-- ── FOOTER ─────────────────────────────────────── -->
 <footer>
-  <div class="footer-grid">
-    <div>
-      <img src="522667673_122246977838074007_3155201805058839485_n.jpg" alt="Zane Anwyll's Hair Salon" class="footer-logo">
-      <p class="footer-desc" style="max-width:300px">
-        Your neighborhood beauty haven in Guiguinto, Bulacan. We're here to make you feel your best, one visit at a time.
-      </p>
-    </div>
-    <div>
-      <div class="footer-heading">Quick Links</div>
-      <ul class="footer-links">
-        <li><a href="#services">Services & Pricing</a></li>
-        <li><a href="#gallery">Transformations</a></li>
-        <li><a href="#about">About the Salon</a></li>
-        <li><a href="#reviews">Client Reviews</a></li>
-        <li><a href="#location">Location & Hours</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener">Book an Appointment</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-heading">Contact</div>
-      <ul class="footer-links">
-        <li><a href="tel:09218090169">0921 809 0169</a></li>
-        <li><a href="https://m.me/" target="_blank" rel="noopener">Message on Messenger</a></li>
-        <li style="color:rgba(255,255,255,0.5);font-size:13px;cursor:default">
-          4620 MacArthur Hwy<br>Guiguinto, Bulacan 3015
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 Zane Anwyll's Hair Salon. All rights reserved.</span>
-    <span style="color:rgba(255,255,255,0.4)">Guiguinto, Bulacan 🌸</span>
-  </div>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Zane Anwyll<span>'s</span> Hair Salon</div>
+      <p class="footer-desc" style="max-width:300px">
+        Your neighborhood beauty haven in Guiguinto, Bulacan. We're here to make you feel your best, one visit at a time.
+      </p>
+    </div>
+    <div>
+      <div class="footer-heading">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#services">Services & Pricing</a></li>
+        <li><a href="#about">About the Salon</a></li>
+        <li><a href="#reviews">Client Reviews</a></li>
+        <li><a href="#location">Location & Hours</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener">Book an Appointment</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:09218090169">0921 809 0169</a></li>
+        <li><a href="https://m.me/" target="_blank" rel="noopener">Message on Messenger</a></li>
+        <li style="color:rgba(255,255,255,0.5);font-size:13px;cursor:default">
+          4620 MacArthur Hwy<br>Guiguinto, Bulacan 3015
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Zane Anwyll's Hair Salon. All rights reserved.</span>
+    <span style="color:rgba(255,255,255,0.4)">Guiguinto, Bulacan </span>
+  </div>
 </footer>
 
-<!-- ── MESSENGER FAB ───────────────────────────────── -->
 <a href="https://m.me/" target="_blank" rel="noopener" class="messenger-fab" title="Message us on Messenger">
-  <svg viewBox="0 0 24 24">
-    <path d="M12 2C6.48 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.71 7.17.19.14.31.36.31.6l.01 2.13c0 .54.56.91 1.05.69l2.39-1.07c.17-.08.36-.1.54-.05 1.25.33 2.58.53 3.99.53 5.52 0 10-4.14 10-9.25S17.52 2 12 2zm1.18 11.83l-2.27-2.42-4.43 2.42 4.87-5.17 2.31 2.42 4.39-2.42-4.94 5.17z"/>
-  </svg>
+  <svg viewBox="0 0 24 24">
+    <path d="M12 2C6.48 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.71 7.17.19.14.31.36.31.6l.01 2.13c0 .54.56.91 1.05.69l2.39-1.07c.17-.08.36-.1.54-.05 1.25.33 2.58.53 3.99.53 5.52 0 10-4.14 10-9.25S17.52 2 12 2zm1.18 11.83l-2.27-2.42-4.43 2.42 4.87-5.17 2.31 2.42 4.39-2.42-4.94 5.17z"/>
+  </svg>
 </a>
 <div class="messenger-tooltip">Message Us</div>
 
