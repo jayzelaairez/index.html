@@ -212,7 +212,7 @@
   .footer-bg { background:var(--onyx); border-top:3px solid var(--gold-deep); }
   footer{ color:rgba(255,255,255,0.6); padding:80px 48px 40px; max-width: 1400px; margin: 0 auto; }
   .footer-grid{display:grid; grid-template-columns:1.8fr 1fr 1fr; gap:64px; margin-bottom:64px}
-  .footer-logo{height:40px; width:auto; margin-bottom:24px; filter: none;} /* Filter removed to let true brand colors pop against the dark footer */
+  .footer-logo{height:40px; width:auto; margin-bottom:24px; filter: none;}
   .footer-desc{font-size:14px; line-height:1.7; font-weight:300}
   .footer-heading{font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:20px; font-weight:600}
   .footer-links{list-style:none; display:flex; flex-direction:column; gap:12px}
@@ -222,21 +222,6 @@
     border-top:1px solid rgba(255,255,255,0.06); padding-top:32px;
     display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; font-size:12px; font-weight:300;
   }
-
-  /* ── MESSENGER FLOATING CALL TO ACTION ────────────────────── */
-  .messenger-fab{
-    position:fixed; bottom:32px; right:32px; z-index:999; width:56px; height:56px; border-radius:50%;
-    background:var(--forest-deep); display:flex; align-items:center; justify-content:center;
-    box-shadow:0 8px 32px rgba(30,45,36,0.2); text-decoration:none; transition: var(--transition); border: 1px solid var(--gold);
-  }
-  .messenger-fab:hover{transform:scale(1.08) translateY(-4px); background:var(--gold-deep)}
-  .messenger-fab svg{width:24px; height:24px; fill:#fff}
-  .messenger-tooltip{
-    position:fixed; bottom:42px; right:100px; z-index:998; background:var(--onyx); color:var(--gold); padding:8px 16px;
-    font-size:11px; text-transform:uppercase; letter-spacing:1.5px; font-weight:500; pointer-events:none;
-    opacity:0; transform:translateX(10px); transition: var(--transition); border: 1px solid var(--gold-deep);
-  }
-  .messenger-fab:hover ~ .messenger-tooltip{opacity:1; transform:translateX(0)}
 
   /* ── RESPONSIVE MEDIA QUERIES ─────────────────────────────── */
   @media(max-width:1024px){
@@ -431,9 +416,10 @@
           <div class="slider-label label-before">Before</div>
           <div class="slider-label label-after">After</div>
           <div class="img-before" id="slider-clip-1">
-            <img src="541746043_638216669346006_7381192293186579975_n.jpg" alt="Protein Straightbond Treatment Before Results">
+            <!-- Ensure you replace this source string below with your distinct BEFORE photo asset -->
+            <img src="541746043_638216669346006_7381192293186579975_n.jpg" alt="Protein Straightbond Treatment Before">
           </div>
-          <img src="541746043_638216669346006_7381192293186579975_n.jpg" alt="SProtein Straightbond Treatment Before Results">
+          <img src="541746043_638216669346006_7381192293186579975_n.jpg" alt="Protein Straightbond Treatment After">
           <input type="range" min="0" max="100" value="50" class="slider-input" oninput="moveSlider(this, 'slider-clip-1')">
         </div>
         <div class="gallery-label">Signature Smooth & Straight Finish</div>
@@ -445,9 +431,9 @@
           <div class="slider-label label-before">Before</div>
           <div class="slider-label label-after">After</div>
           <div class="img-before" id="slider-clip-2">
-            <img src="483686471_503382056162802_5852906312615367496_n.jpg" alt="Frizz Control Keratin Treatment W/ Balayage Before Results">
+            <img src="483686471_503382056162802_5852906312615367496_n.jpg" alt="Frizz Control Keratin Treatment W/ Balayage Before">
           </div>
-          <img src="483686471_503382056162802_5852906312615367496_n.jpg" alt="Frizz Control Keratin Treatment W/ Balayage After Results">
+          <img src="483686471_503382056162802_5852906312615367496_n.jpg" alt="Frizz Control Keratin Treatment W/ Balayage After">
           <input type="range" min="0" max="100" value="50" class="slider-input" oninput="moveSlider(this, 'slider-clip-2')">
         </div>
         <div class="gallery-label">Premium Deep Cellular Frizz Control</div>
@@ -593,8 +579,9 @@
       </div>
       <div>
         <div class="map-embed">
+          <!-- Swapped to safe Google Maps embed coordinates for Sunoria Plaza Bulacan -->
           <iframe
-            src="https://www.google.com/maps/place/Sunoria+Plaza/@14.8284354,120.8789182,17z/data=!3m1!4b1!4m6!3m5!1s0x3396538750c02807:0xcaee22c7703fb175!8m2!3d14.8284354!4d120.8814931!16s%2Fg%2F11yl4h7rct?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1m11!1m3!1m2!1s0x3396538750c02807%3A0xcaee22c7703fb175!2sSunoria+Plaza!2m2!1d120.8814931!2d14.8284354!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1717200000000!5m2!1sen!2sph"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -619,8 +606,8 @@
     <div class="footer-grid">
       <div>
         <img src="522667673_122246977838074007_3155201805058839485_n.jpg" alt="Zane Anwyll's Hair Salon Logo Brand" class="footer-logo">
-        <p class="footer-desc" style="max-width:320px">
-          A professional space dedicated to high-performance hair craftsmanship, calming aesthetics, and client tranquility.
+        <p class="footer-desc" style="max-width:320px;">
+          An upscale boutique experience optimizing hair architecture, dimensional tones, and specialized deep cellular treatments.
         </p>
       </div>
       <div>
@@ -628,42 +615,30 @@
         <ul class="footer-links">
           <li><a href="#services-container">Services Menu</a></li>
           <li><a href="#gallery-container">Transformations</a></li>
-          <li><a href="#about-container">The Philosophy</a></li>
-          <li><a href="#reviews-container">Guest Reviews</a></li>
-          <li><a href="#location-container">Hours & Location</a></li>
+          <li><a href="#about-container">Our Philosophy</a></li>
+          <li><a href="#location-container">Location Menu</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading">Inquiries</div>
+        <div class="footer-heading">Connect</div>
         <ul class="footer-links">
-          <li><a href="tel:09218090169">0921 809 0169</a></li>
-          <li><a href="https://www.facebook.com/zaneanwyllsguiguintobranch" target="_blank" rel="noopener">Direct Messenger</a></li>
-          <li style="color:rgba(255,255,255,0.35); font-size:13px; line-height:1.5">
-            Sunoria Plaza, MacArthur Hwy<br>Guiguinto, Bulacan
-          </li>
+          <li><a href="https://calendly.com/jayzelaairez/new-meeting" target="_blank" rel="noopener">Book Online</a></li>
+          <li><a href="tel:09218090169">Call Lounge</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Zane Anwyll's Hair Salon. All rights reserved.</span>
-      <span style="color:var(--gold)">Guiguinto, Bulacan 🌿</span>
+      <div>&copy; 2026 Zane Anwyll's Hair Salon. All Rights Reserved.</div>
+      <div>Premium Lounge Experience</div>
     </div>
   </footer>
 </div>
 
-<!-- ── MESSENGER FAB ───────────────────────────────── -->
-<a href="https://www.facebook.com/zaneanwyllsguiguintobranch" target="_blank" rel="noopener" class="messenger-fab" title="Message us on Messenger">
-  <svg viewBox="0 0 24 24">
-    <path d="M12 2C6.48 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.71 7.17.19.14.31.36.31.6l.01 2.13c0 .54.56.91 1.05.69l2.39-1.07c.17-.08.36-.1.54-.05 1.25.33 2.58.53 3.99.53 5.52 0 10-4.14 10-9.25S17.52 2 12 2zm1.18 11.83l-2.27-2.42-4.43 2.42 4.87-5.17 2.31 2.42 4.39-2.42-4.94 5.17z"/>
-  </svg>
-</a>
-<div class="messenger-tooltip">Consult Lounge</div>
-
-<!-- ── SCRIPTS ────────────────────────────────────── -->
+<!-- ── ENGINE SCRIPTS ─────────────────────────────── -->
 <script>
-  // Sticky glass navigation transformation logic
-  const header = document.getElementById('main-header');
+  // Sticky Navbar Effects
   window.addEventListener('scroll', () => {
+    const header = document.getElementById('main-header');
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
     } else {
@@ -671,27 +646,30 @@
     }
   });
 
-  // Mobile navigation drawer toggle mechanism
-  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  // Mobile Menu Layout Toggle
+  const mobileBtn = document.getElementById('mobile-menu-btn');
   const menuLinks = document.getElementById('menu-links');
-
-  mobileMenuBtn.addEventListener('click', () => {
-    mobileMenuBtn.classList.toggle('active');
+  
+  mobileBtn.addEventListener('click', () => {
+    mobileBtn.classList.toggle('active');
     menuLinks.classList.toggle('active');
   });
 
+  // Smooth Auto-Close Menu when item is clicked on Mobile view
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
-      mobileMenuBtn.classList.remove('active');
+      mobileBtn.classList.remove('active');
       menuLinks.classList.remove('active');
     });
   });
 
-  // Interactive UI before/after picture calculation slider
-  function moveSlider(slider, clipId) {
-    const clipElement = document.getElementById(clipId);
-    const value = slider.value;
-    clipElement.style.width = `${value}%`;
+  // Interactive Image Before/After Clip Engine
+  function moveSlider(inputElement, clipId) {
+    const percentage = inputElement.value;
+    const clipTarget = document.getElementById(clipId);
+    if (clipTarget) {
+      clipTarget.style.width = percentage + '%';
+    }
   }
 </script>
 
