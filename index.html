@@ -260,27 +260,18 @@
     text-decoration:none;transition:transform .25s,box-shadow .25s;
   }
   .messenger-fab:hover{transform:scale(1.1);box-shadow:0 12px 40px rgba(0,153,255,0.45)}
-  .messenger-fab svg{width:28px;height:28px}
+  .messenger-fab svg{width:28px;height:28px;fill:#fff}
   .messenger-tooltip{
-    position:fixed;bottom:40px;right:100px;z-index:998;
+    position:fixed;bottom:42px;right:102px;z-index:998;
     background:var(--text);color:#fff;padding:8px 16px;border-radius:40px;
     font-size:13px;font-weight:500;white-space:nowrap;pointer-events:none;
     opacity:0;transform:translateX(8px);transition:opacity .2s,transform .2s;
   }
-  .messenger-fab:hover~.messenger-tooltip,
-  .messenger-tooltip.show{opacity:1;transform:translateX(0)}
-
-  /* ── SUCCESS MSG ──────────────────────────────────────────── */
-  .success-msg{
-    display:none;text-align:center;padding:20px;
-    background:rgba(196,104,128,0.1);border-radius:var(--r-sm);
-    color:var(--rose-deep);font-size:14px;font-weight:500;margin-top:16px;
-  }
+  .messenger-fab:hover ~ .messenger-tooltip{opacity:1;transform:translateX(0)}
 </style>
 </head>
 <body>
 
-<!-- ── HERO ─────────────────────────────────────── -->
 <section class="hero">
   <div class="hero-blob blob1"></div>
   <div class="hero-blob blob2"></div>
@@ -294,7 +285,7 @@
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#location">Location</a></li>
     </ul>
-    <a href="#booking" class="nav-cta">Book a Visit</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="nav-cta">Book Appointment</a>
   </nav>
 
   <div class="hero-content">
@@ -302,7 +293,7 @@
     <h1>Your hair,<br><em>beautifully</em><br>reimagined.</h1>
     <p class="hero-sub">A clean, calm space where every visit leaves you feeling refreshed, confident, and completely yourself.</p>
     <div class="hero-btns">
-      <a href="#booking" class="btn-primary">Book an Appointment</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn-primary">Book an Appointment</a>
       <a href="#services" class="btn-ghost">Explore Services</a>
     </div>
   </div>
@@ -327,7 +318,6 @@
   </div>
 </section>
 
-<!-- ── MARQUEE ───────────────────────────────────── -->
 <div class="marquee-wrap">
   <div class="marquee-track">
     <span>Haircuts</span><span class="dot">✦</span>
@@ -345,14 +335,13 @@
   </div>
 </div>
 
-<!-- ── SERVICES ──────────────────────────────────── -->
 <section id="services">
   <div class="services-header">
     <div>
       <div class="section-tag">What We Offer</div>
       <h2 class="section-title">Our services,<br>crafted with care.</h2>
     </div>
-    <a href="#booking" class="btn-primary" style="align-self:flex-end">Book Now</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn-primary" style="align-self:flex-end">Book Now</a>
   </div>
 
   <div class="services-grid">
@@ -411,7 +400,6 @@
   </p>
 </section>
 
-<!-- ── ABOUT / WHY US ─────────────────────────────── -->
 <section id="about">
   <div class="about-grid">
     <div class="about-visual">
@@ -431,39 +419,39 @@
     </div>
 
     <div>
-  <div class="section-tag">Why Choose Us</div>
-  <h2 class="section-title">A salon that<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--rose-deep)">truly</em> cares.</h2>
-  <p style="font-size:15px;color:var(--text-mid);line-height:1.8;margin:16px 0 0">
-    At Zane Anwyll's, we believe a great salon experience goes beyond the chair.
-    It's about feeling heard, cared for, and leaving better than you came in.
-  </p>
-  <div class="features">
-    <div class="feature">
-      <div class="feature-dot">🌸</div>
-      <div>
-        <div class="feature-title">Warm, Hands-On Team</div>
-        <div class="feature-desc">Our staff are attentive, friendly, and genuinely invested in your experience — ask for Francine!</div>
-      </div>
-    </div>
-    <div class="feature">
-      <div class="feature-dot">✨</div>
-      <div>
-        <div class="feature-title">Clean & Comfortable Space</div>
-        <div class="feature-desc">A calm, quiet environment so you can fully relax and enjoy your me-time.</div>
-      </div>
-    </div>
-    <div class="feature">
-      <div class="feature-dot">💝</div>
-      <div>
-        <div class="feature-title">Top-Tier Service, Every Visit</div>
-        <div class="feature-desc">High-quality results that our clients keep coming back for. Super sulit!</div>
+      <div class="section-tag">Why Choose Us</div>
+      <h2 class="section-title">A salon that<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--rose-deep)">truly</em> cares.</h2>
+      <p style="font-size:15px;color:var(--text-mid);line-height:1.8;margin:16px 0 0">
+        At Zane Anwyll's, we believe a great salon experience goes beyond the chair.
+        It's about feeling heard, cared for, and leaving better than you came in.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-dot">🌸</div>
+          <div>
+            <div class="feature-title">Warm, Hands-On Team</div>
+            <div class="feature-desc">Our staff are attentive, friendly, and genuinely invested in your experience — ask for Francine!</div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-dot">✨</div>
+          <div>
+            <div class="feature-title">Clean & Comfortable Space</div>
+            <div class="feature-desc">A calm, quiet environment so you can fully relax and enjoy your me-time.</div>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-dot">💝</div>
+          <div>
+            <div class="feature-title">Top-Tier Service, Every Visit</div>
+            <div class="feature-desc">High-quality results that our clients keep coming back for. Super sulit!</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </section>
 
-<!-- ── REVIEWS ────────────────────────────────────── -->
 <section id="reviews">
   <div class="reviews-header">
     <div class="section-tag">Client Love</div>
@@ -497,36 +485,25 @@
     </div>
 
     <div class="review-card">
-  <div class="review-stars">★★★★★</div>
-  <p class="review-text">"Super worth it! Accommodating staff and top tier service! Will definitely come back next time!"</p>
-  <div class="review-author">
-    <div class="avatar">KK</div>
-    <div>
-      <div class="author-name">Kyla Keeps</div>
-      <div class="author-meta">4 months ago · Google Review</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"High quality performance and top tier service. Friendly staffs and sobrang hands on ng mga owners. ✨"</p>
+      <div class="review-author">
+        <div class="avatar">JM</div>
+        <div>
+          <div class="author-name">Jeane Monique Serafica</div>
+          <div class="author-meta">4 months ago · Google Review</div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="review-card">
-  <div class="review-stars">★★★★★</div>
-  <p class="review-text">"High quality performance and top tier service. Friendly staffs and sobrang hands on ng mga owners. ✨"</p>
-  <div class="review-author">
-    <div class="avatar">JM</div>
-    <div>
-      <div class="author-name">Jeane Monique Serafica</div>
-      <div class="author-meta">4 months ago · Google Review</div>
-    </div>
-  </div>
-</div>
   <div style="text-align:center;margin-top:40px">
-    <a href="https://maps.app.goo.gl/zaneAnwyllSalon" target="_blank" rel="noopener" class="btn-ghost" style="display:inline-block;border:1px solid rgba(196,104,128,0.3)">
+    <a href="https://www.google.com/search?q=https://maps.google.com/%3Fq%3DSunoria%2BPlaza%2BGuiguinto%2BBulacan" target="_blank" rel="noopener" class="btn-ghost" style="display:inline-block;border:1px solid rgba(196,104,128,0.3)">
       Leave a Google Review
     </a>
   </div>
 </section>
 
-<!-- ── LOCATION ───────────────────────────────────── -->
 <section id="location">
   <div class="location-grid">
     <div>
@@ -569,7 +546,7 @@
     <div>
       <div class="map-embed">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.456!2d120.876!3d14.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396519f1aef3a85%3A0x3e28b62da50e37a6!2s4620%20MacArthur%20Hwy%2C%20Poblacion%2C%20Guiguinto%2C%20Bulacan!5e0!3m2!1sen!2sph!4v1693000000000!5m2!1sen!2sph"
+          src="https://www.google.com/search?q=https://www.google.com/maps/embed%3Fpb%3D!1m18!1m12!1m3!1d3856.323861214059!2d120.8776694!3d14.8345789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33965241e5631481%253A0xcb55cf4bda90bebf!2sMacArthur%2520Hwy%252C%2520Guiguinto%252C%2520Bulacan!5e0!3m2!1sen!2sph!4v1717312000000!5m2!1sen!2sph"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -577,7 +554,7 @@
         </iframe>
       </div>
       <a
-        href="https://maps.google.com/?q=4620+MacArthur+Hwy+Poblacion+Guiguinto+Bulacan"
+        href="http://googleusercontent.com/maps.google.com/9"
         target="_blank" rel="noopener"
         style="display:block;text-align:center;margin-top:16px"
         class="btn-primary">
@@ -587,67 +564,6 @@
   </div>
 </section>
 
-<!-- ── BOOKING FORM ───────────────────────────────── -->
-<section id="booking">
-  <div class="booking-header" style="text-align:center;margin-bottom:48px">
-    <div class="section-tag" style="text-align:center">Book a Visit</div>
-    <h2 class="section-title">Ready for your<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--rose-deep)">glow-up?</em></h2>
-    <p style="font-size:15px;color:var(--text-mid);margin-top:12px">Fill out the form below and we'll get back to you to confirm your appointment.</p>
-  </div>
-
-  <div class="booking-wrap">
-    <form id="bookingForm">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" placeholder="e.g. Maria" required>
-        </div>
-        <div class="form-group">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" placeholder="e.g. Santos" required>
-        </div>
-      </div>
-
-      <div class="form-row">
-    <div class="form-group">
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" placeholder="09XX XXX XXXX" required>
-    </div>
-    <div class="form-group">
-      <label for="date">Preferred Date</label>
-      <input type="date" id="date" required>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <label for="service">Service Interested In</label>
-    <select id="service" required>
-      <option value="" disabled selected>Select a service…</option>
-      <option>Haircut</option>
-      <option>Hair Coloring</option>
-      <option>Keratin Treatment</option>
-      <option>Hair Rebonding</option>
-      <option>Manicure</option>
-      <option>Pedicure</option>
-      <option>Mani + Pedi Combo</option>
-      <option>Other / Multiple Services</option>
-    </select>
-  </div>
-
-  <div class="form-group">
-    <label for="notes">Additional Notes <span style="color:var(--text-soft);font-weight:300">(optional)</span></label>
-    <textarea id="notes" placeholder="Any special requests, hair concerns, or questions? Let us know!"></textarea>
-  </div>
-
-  <button type="submit" class="submit-btn">Send Inquiry ✦</button>
-  <p class="form-note">We'll reply via call or text to confirm your schedule. 🌸</p>
-  <div class="success-msg" id="successMsg">
-    🌸 Thank you! We'll reach out soon to confirm your appointment.
-  </div>
-</form>
-</section>
-
-<!-- ── FOOTER ─────────────────────────────────────── -->
 <footer>
   <div class="footer-grid">
     <div>
@@ -663,7 +579,7 @@
         <li><a href="#about">About the Salon</a></li>
         <li><a href="#reviews">Client Reviews</a></li>
         <li><a href="#location">Location & Hours</a></li>
-        <li><a href="#booking">Book an Appointment</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfLtmjjAoAvAE7sctbNtLzC89tWrY4nL3DjpaTJb-Jqq7AGrA/viewform?usp=publish-editor" target="_blank" rel="noopener">Book an Appointment</a></li>
       </ul>
     </div>
     <div>
@@ -678,57 +594,17 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 Zane Anwyll's Hair Salon. All rights reserved.</span>
+    <span>© 2026 Zane Anwyll's Hair Salon. All rights reserved.</span>
     <span style="color:rgba(255,255,255,0.4)">Guiguinto, Bulacan 🌸</span>
   </div>
 </footer>
 
-<!-- ── MESSENGER FAB ──────────────────────────────── -->
-<a href="https://m.me/" target="_blank" rel="noopener" class="messenger-fab" aria-label="Chat on Messenger">
-  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill="white" d="M16 2C8.268 2 2 7.924 2 15.196c0 4.168 2.008 7.888 5.148 10.384V30l4.696-2.588C13.132 27.76 14.544 28 16 28c7.732 0 14-5.924 14-13.196C30 7.924 23.732 2 16 2zm1.4 17.78l-3.564-3.804-6.956 3.804 7.648-8.12 3.652 3.804 6.868-3.804-7.648 8.12z"/>
+<a href="https://m.me/" target="_blank" rel="noopener" class="messenger-fab" title="Message us on Messenger">
+  <svg viewBox="0 0 24 24">
+    <path d="M12 2C6.48 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.71 7.17.19.14.31.36.31.6l.01 2.13c0 .54.56.91 1.05.69l2.39-1.07c.17-.08.36-.1.54-.05 1.25.33 2.58.53 3.99.53 5.52 0 10-4.14 10-9.25S17.52 2 12 2zm1.18 11.83l-2.27-2.42-4.43 2.42 4.87-5.17 2.31 2.42 4.39-2.42-4.94 5.17z"/>
   </svg>
 </a>
-<div class="messenger-tooltip" id="messengerTip">Chat with us!</div>
+<div class="messenger-tooltip">Message Us</div>
 
-<script>
-  // Form submission
-  document.getElementById('bookingForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    document.getElementById('successMsg').style.display = 'block';
-    this.reset();
-    setTimeout(() => { document.getElementById('successMsg').style.display = 'none'; }, 5000);
-  });
-
-  // Set min date for date input
-  var d = new Date();
-  d.setDate(d.getDate() + 1);
-  document.getElementById('date').min = d.toISOString().split('T')[0];
-
-  // Messenger tooltip
-  var fab = document.querySelector('.messenger-fab');
-  var tip = document.getElementById('messengerTip');
-  setTimeout(() => { tip.classList.add('show'); }, 2000);
-  setTimeout(() => { tip.classList.remove('show'); }, 5000);
-  fab.addEventListener('mouseenter', () => tip.classList.add('show'));
-  fab.addEventListener('mouseleave', () => tip.classList.remove('show'));
-
-  // Smooth reveal on scroll
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.service-card, .review-card, .feature, .detail-item').forEach(function(el) {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(24px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(el);
-  });
-</script>
 </body>
 </html>
