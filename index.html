@@ -97,10 +97,7 @@
   .stat{text-align:center}
   .stat-num{font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:400; color:var(--gold-deep)}
   .stat-label{font-size:11px; text-transform:uppercase; letter-spacing:1.5px; color:var(--text-mid); margin-top:4px; font-weight: 500;}
-<div style="text-align:center; padding:30px; font-size:13px; color:#555;">
-  ✔ Walk-ins welcome &nbsp;&nbsp; ✔ Fast replies on Messenger &nbsp;&nbsp; ✔ Located inside Sunoria Plaza
-</div>
- 
+
   /* ── SCROLL MARQUEE ───────────────────────────────────────── */
   .marquee-wrap{
     background:var(--forest-deep); overflow:hidden; padding:20px 0; white-space:nowrap;
@@ -276,30 +273,37 @@
 💬 Chat
 </a>
 <body>
- 
 
 <!-- ── NAV HEADER ───────────────────────────────── -->
-<header id="main-header" class="navbar">
+<header class="navbar">
   <div class="nav-container">
 
+    <!-- LOGO -->
     <div class="nav-logo">
-      Zane Anwyll Salon
+      Zane Anwyll's Salon
     </div>
 
-    <nav class="nav-links">
+    <!-- NAV LINKS -->
+    <nav class="nav-menu">
+      <a href="#home">Home</a>
       <a href="#services">Services</a>
-      <a href="#gallery">Results</a>
-      <a href="#location">Visit</a>
+      <a href="#location">Location</a>
     </nav>
 
+    <!-- RIGHT SIDE -->
     <div class="nav-actions">
+
+      <!-- LOCATION TAG -->
       <span class="nav-location">📍 Guiguinto, Bulacan</span>
 
-      <a href="https://m.me/zaneanwyllsguiguintobranch"
-         target="_blank"
+      <!-- CTA BUTTON -->
+      <a href="https://m.me/zaneanwyllsguiguintobranch" 
+         target="_blank" 
+         rel="noopener" 
          class="nav-cta">
-        Book Now
+         Book Now
       </a>
+
     </div>
 
   </div>
@@ -664,9 +668,9 @@
 
 <!-- ── ENGINE SCRIPTS ─────────────────────────────── -->
 <script>
-  const header = document.getElementById('main-header');
-
+  // Sticky Navbar Effects
   window.addEventListener('scroll', () => {
+    const header = document.getElementById('main-header');
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
     } else {
@@ -674,6 +678,24 @@
     }
   });
 
+  // Mobile Menu Layout Toggle
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const menuLinks = document.getElementById('menu-links');
+  
+  mobileBtn.addEventListener('click', () => {
+    mobileBtn.classList.toggle('active');
+    menuLinks.classList.toggle('active');
+  });
+
+  // Smooth Auto-Close Menu when item is clicked on Mobile view
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileBtn.classList.remove('active');
+      menuLinks.classList.remove('active');
+    });
+  });
+
+  // Interactive Image Before/After Clip Engine
   function moveSlider(inputElement, clipId) {
     const percentage = inputElement.value;
     const clipTarget = document.getElementById(clipId);
@@ -683,5 +705,5 @@
   }
 </script>
 
-
+</body>
 </html>
