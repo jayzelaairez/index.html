@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zane Anwyll's Hair Salon – Premium Lounge | Guiguinto, Bulacan</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght=0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght=300;400;500;600&display=swap" rel="stylesheet">
@@ -256,76 +256,156 @@
     .menu-toggle.active span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
   }
 <style> 
- header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  padding: 18px 40px;
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+ /* Base Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav-container {
-  max-width: 1200px;
-  margin: auto;
+body {
+  font-family: 'Playfair Display', 'Didot', 'Georgia', serif;
+  background-color: #f9f9f9;
+}
+
+/* Header Container */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #faf8f5; /* Warm, off-white background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft bottom shadow */
+  min-height: 90px;
+}
+
+/* --- 1. Logo Styling --- */
+.logo-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-/* LEFT */
-.nav-logo {
-  font-weight: 600;
+.logo-initials {
+  font-size: 32px;
+  font-weight: 400;
+  color: #1c2b1f;
+  letter-spacing: -2px;
+}
+
+.logo-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #d1c7bd;
+  margin: 0 15px;
+}
+
+.logo-text h1 {
   font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #1c2b1f;
 }
 
-/* CENTER */
-.nav-center {
+.logo-text p {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: #c5a880; /* Subtle gold accent */
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* --- 2. Navigation Styling --- */
+.nav-links {
   display: flex;
-  gap: 40px;
+  gap: 35px;
 }
 
-.nav-center a {
+.nav-item {
   text-decoration: none;
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-family: sans-serif; /* Clean sans-serif for navigation */
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
   color: #333;
-  transition: 0.2s;
+  position: relative;
+  padding-bottom: 8px;
+  transition: color 0.3s ease;
 }
 
-.nav-center a:hover {
-  color: #1e2d24;
+.nav-item:hover {
+  color: #c5a880;
 }
 
-/* RIGHT */
-.nav-right {
+/* Active gold underline effect */
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 70%;
+  height: 2px;
+  background-color: #c5a880;
+}
+
+/* --- 3. Actions & CTA Styling --- */
+.actions-container {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.nav-location {
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: sans-serif;
   font-size: 13px;
-  color: #666;
-  text-decoration: none;
+  color: #444;
 }
 
-/* CTA BUTTON */
-.nav-cta {
-  background: linear-gradient(135deg, #1e2d24, #2f4a3a);
-  color: white;
-  padding: 10px 18px;
-  border-radius: 999px;
-  font-size: 13px;
-  text-decoration: none;
-  transition: 0.3s;
+.pin-icon {
+  width: 16px;
+  height: 16px;
+  color: #c5a880;
 }
 
-.nav-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.vertical-divider {
+  width: 1px;
+  height: 30px;
+  background-color: #e0e0e0;
+}
+
+/* The Button */
+.btn-book {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #233326; /* Deep forest green */
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 14px 28px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(35, 51, 38, 0.3); /* Button depth */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #1c2b1f;
+  transform: translateY(-1px);
+}
+
+.arrow {
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.btn-book:hover .arrow {
+  transform: translateX(4px); /* Moves arrow slightly on hover */
 }
 </style>
 </head>
@@ -347,35 +427,38 @@
 <body>
 
 <!-- ── NAV HEADER ───────────────────────────────── -->
-<header id="main-header">
-  <div class="nav-container">
-
-    <!-- LEFT: BRAND -->
-    <div class="nav-left">
-      <div class="nav-logo">Zane Anwyll's Salon</div>
+<header class="main-header">
+  <div class="logo-container">
+    <div class="logo-initials">ZA</div>
+    <div class="logo-divider"></div>
+    <div class="logo-text">
+      <h1>ZANE ANWYLL'S</h1>
+      <p>SALON</p>
     </div>
+  </div>
 
-    <!-- CENTER: MENU -->
-    <nav class="nav-center">
-      <a href="#services">Services</a>
-      <a href="#results">Results</a>
-      <a href="#about">About</a>
-      <a href="#reviews">Reviews</a>
-    </nav>
+  <nav class="nav-links">
+    <a href="#" class="nav-item active">SERVICES</a>
+    <a href="#" class="nav-item">RESULTS</a>
+    <a href="#" class="nav-item">ABOUT US</a>
+    <a href="#" class="nav-item">REVIEWS</a>
+  </nav>
 
-    <!-- RIGHT: LOCATION + CTA -->
-    <div class="nav-right">
-      <a href="#location" class="nav-location">
-        📍 Guiguinto, Bulacan
-      </a>
-
-      <a href="https://m.me/zaneanwyllsguiguintobranch"
-         target="_blank"
-         class="nav-cta">
-        Book Now →
-      </a>
+  <div class="actions-container">
+    <div class="location">
+      <svg class="pin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      <span>Guiguinto, Bulacan</span>
     </div>
-
+    
+    <div class="vertical-divider"></div>
+    
+    <a href="#" class="btn-book">
+      BOOK NOW 
+      <span class="arrow">&rarr;</span>
+    </a>
   </div>
 </header>
 
