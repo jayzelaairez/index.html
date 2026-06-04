@@ -255,6 +255,78 @@
     .menu-toggle.active span:nth-child(2) { opacity: 0; }
     .menu-toggle.active span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
   }
+<style> 
+ header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 18px 40px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT */
+.nav-logo {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* CENTER */
+.nav-center {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #333;
+  transition: 0.2s;
+}
+
+.nav-center a:hover {
+  color: #1e2d24;
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-location {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+}
+
+/* CTA BUTTON */
+.nav-cta {
+  background: linear-gradient(135deg, #1e2d24, #2f4a3a);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
 </style>
 </head>
  <a href="https://m.me/zaneanwyllsguiguintobranch"
@@ -275,35 +347,33 @@
 <body>
 
 <!-- ── NAV HEADER ───────────────────────────────── -->
-<header class="navbar">
+<header id="main-header">
   <div class="nav-container">
 
-    <!-- LOGO -->
-    <div class="nav-logo">
-      Zane Anwyll's Salon
+    <!-- LEFT: BRAND -->
+    <div class="nav-left">
+      <div class="nav-logo">Zane Anwyll's Salon</div>
     </div>
 
-    <!-- NAV LINKS -->
-   <nav class="nav-links">
+    <!-- CENTER: MENU -->
+    <nav class="nav-center">
       <a href="#services">Services</a>
-      <a href="#gallery">Results</a>
-      <a href="#location">Visit</a>
+      <a href="#results">Results</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
     </nav>
 
-    <!-- RIGHT SIDE -->
-    <div class="nav-actions">
-
-      <!-- LOCATION TAG -->
-      <span class="nav-location">📍 Guiguinto, Bulacan</span>
-
-      <!-- CTA BUTTON -->
-      <a href="https://m.me/zaneanwyllsguiguintobranch" 
-         target="_blank" 
-         rel="noopener" 
-         class="nav-cta">
-         Book Now
+    <!-- RIGHT: LOCATION + CTA -->
+    <div class="nav-right">
+      <a href="#location" class="nav-location">
+        📍 Guiguinto, Bulacan
       </a>
 
+      <a href="https://m.me/zaneanwyllsguiguintobranch"
+         target="_blank"
+         class="nav-cta">
+        Book Now →
+      </a>
     </div>
 
   </div>
